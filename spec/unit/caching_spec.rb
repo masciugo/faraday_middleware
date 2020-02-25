@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'rack/cache'
+require 'fileutils'
 
 RSpec.describe FaradayMiddleware::Caching do
   let(:caching_lint_middleware) do
